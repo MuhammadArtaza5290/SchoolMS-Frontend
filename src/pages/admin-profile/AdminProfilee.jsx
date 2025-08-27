@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import './AdminProfile.css'
+import './adminProfile.css'
 import axios from '../../config/axiosConfig'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../../components/navbar/Navbar'

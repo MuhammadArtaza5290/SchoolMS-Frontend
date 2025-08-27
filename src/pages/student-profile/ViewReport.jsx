@@ -3,7 +3,7 @@ import { useReactToPrint } from "react-to-print";
 import "./viewReport.css";
 import axios from "../../config/axiosConfig";
 import { useParams } from "react-router-dom";
-import lightlogo from "../../assets/lightlogo.png";
+import lightlogo from "../../assets/lightLogo.png";
 function ViewReport() {
   const {studentId, marksId} = useParams()
   const [data, setData] = useState()
