@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(280deg, #081035, aliceblue);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.inner-container {
+  height: auto;
+  min-height: 70%;
+  width: 70%;
+  max-width: 1200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;   /* 👈 Default side-by-side */
+  overflow: hidden;
+}
+
+/* Left section */
+.left {
+  flex: 1.5;
+  background-color: #152259;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 19px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 19px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Right section */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 2.5rem;
+}
+
+p {
+  color: aliceblue;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.right h1 {
+  font-size: 2.5rem;
+}
+
+.barImage {
+  height: 120px;
+  width: 120px;
+}
+
+.loginImage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* ========================
+   📱 Responsive Media Queries
+======================== */
+
+/* Tablet/Laptop small screen fix */
+@media (max-width: 992px) {
+  .inner-container {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .barImage {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* Mobile → upar-nicha (below 600px) */
+@media (max-width: 600px) {
+  .inner-container {
+    flex-direction: column; /* 👈 side by side se upar-nicha */
+    border-radius: 15px;
+  }
+
+  .left {
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    min-height: 200px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .right h1 {
+    font-size: 2rem;
+  }
+
+  .barImage {
+    height: 80px;
+    width: 80px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,27 @@
+.btn{
+    width: 80%;
+    height: 44px;
+    background-color: #152259;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #1e3080;
+}
+.logoutBtn{
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: none;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+    padding-bottom: 10px; 
+    color: #152259; 
+}

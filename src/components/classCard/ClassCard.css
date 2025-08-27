@@ -1,0 +1,49 @@
+.class-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Content */
+.card-content {
+  margin-bottom: 20px;
+}
+
+.class-title {
+  font-size: 1.5rem;
+  color: #1f2937;
+  margin: 0;
+}
+
+.teacher-name {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 8px;
+}
+
+/* View Button */
+.view-button {
+  background-color: #152259;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #1d2e79;
+}

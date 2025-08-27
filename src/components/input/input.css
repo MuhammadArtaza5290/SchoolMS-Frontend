@@ -1,0 +1,16 @@
+input {
+    margin-top: 5px;
+  width: 80%;
+  height: 44px;
+  font-size: 1rem;
+  border: 1px solid #c4c2c2;
+  border-radius: 8px;
+  padding: 0 12px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #1c66b6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(28, 102, 182, 0.4);
+}

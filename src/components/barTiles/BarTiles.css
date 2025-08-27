@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tile{
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.tile a{
+     width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #152259;
+    transition: background-color 0.2s ease;
+}
+.tile a:hover{
+    background-color: #213281;
+}
+.tile a.active{
+    background-color: aliceblue;
+    color: #213281;
+    font-weight: 600;
+}

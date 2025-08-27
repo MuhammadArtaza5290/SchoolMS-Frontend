@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin-container{
+    width: 100%;
+    min-height: 80vh;
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.editProfile-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.editProfile-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.page-content{
+  width: 100%;
+  min-height: 100vh;
+}
+.class-mainContainer {
+  width: 100%;
+  min-height: 100vh;
+}
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.classHeading{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.classHeading h2{
+ color: #333;
+}
+
+/* Each card including class-create shares same styling base */
+.class-view,
+.class-create {
+  background-color: white;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px; /* ✅ Match card height */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.class-create:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  background-color: #f5faff;
+  cursor: pointer;
+}
+
+.class-create h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.class-icon {
+  font-size: 80px;
+  color: #4b5563;
+}
+
+/* Dropdown area inside create card */
+.class-dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 90%;
+  gap: 10px;
+}
+
+.class-dropdown-wrapper label {
+  font-size: 14px;
+  color: #444;
+}
+
+.class-dropdown-wrapper select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s border-color;
+}
+
+.class-dropdown-wrapper select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+.class-dropdown-wrapper button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #152259;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.class-dropdown-wrapper button:hover {
+  background-color: #1d2e79;
+}
+
+.createCard{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+/* Responsive fix for smaller devices */
+
+
+.inputTeacher-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 20px;
+  gap: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.label {
+  font-weight: 500;
+  margin-top: 10px;
+}
+.input-field,
+.dropdownn {
+  width: 100%;
+}
+
+.dropdownn {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+.teacherview-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacherHeading h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.teacher-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.teacher-card {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.teacher-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  margin-bottom: 15px;
+}
+
+.teacher-info h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.teacher-info p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin: 0;
+}
+.card-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* 🔸 Icon Style */
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+/* 🔹 Edit Icon Hover */
+.edit-icon:hover {
+  color: #2980b9;
+  transform: scale(1.2);
+}
+
+/* 🔹 Delete Icon Hover */
+.delete-icon:hover {
+  color: #f5250e;
+  transform: scale(1.2);
+}
+.createTeacher-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh; /* light gray background */
+}
+
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.inputTeacher-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.input-field,
+select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-field:focus,
+select:focus {
+  border-color: #3b82f6; /* blue border on focus */
+}
+
+input[type="file"] {
+  padding: 6px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+button,
+.view-button {
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+
+
+/* Responsive behavior */
+@media (min-width: 600px) {
+  .class-view{
+    width: 45%;
+  }
+  .class-create {
+    width: 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .class-view{
+    width: 30%;
+  }
+  .class-create {
+    width: 30%;
+  }
+}
+

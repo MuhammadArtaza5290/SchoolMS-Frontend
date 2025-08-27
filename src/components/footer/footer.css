@@ -1,0 +1,34 @@
+/* Base */
+.footer {
+  background: #152259;            /* slate-900 */
+  color: aliceblue;                 /* slate-300 */
+  padding: 14px 16px;
+  margin-top: 24px;
+  border-top: 1px solid #152259;  /* subtle line */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Layout */
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap; /* ✅ responsive: items wrap on small screens */
+}
+
+.footer__copy {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+}
