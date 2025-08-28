@@ -10,7 +10,7 @@ import Footer from '../../components/footer/Footer'
 
 function AdminProfilee() {
   const location = useLocation();
-  let[user, setUser] = useState(null)
+  let[user, setUser] = useState("")
   const navigate = useNavigate();
     useEffect(()=>{
        axios.get('/adminprofile')
@@ -20,13 +20,13 @@ function AdminProfilee() {
         if (error.response.status === 403 && role === 'admin') {
           navigate('/adminProfile')
         }else if(error.response.status === 403 && role === 'teacher'){
-          setUser(null);
+          setUser("");
           navigate('/teacherProfile')
         }else if(error.response.status === 403 && role === 'student'){
-          setUser(null);
+          setUser("");
           navigate('/studentProfile')
         }else{
-          setUser(null)
+          setUser("")
           navigate('/')
         }
       })

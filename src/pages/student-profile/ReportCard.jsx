@@ -28,7 +28,7 @@ function ReportCard() {
         </div>
 
         <div className="teacher-card-wrapper">
-          {card.length > 0 ? (
+          {card?.length > 0 ? (
               card?.map((val, index)=>{
             return(
               <div className="teacher-card" key={index}>
