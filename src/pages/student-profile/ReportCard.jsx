@@ -28,7 +28,8 @@ function ReportCard() {
         </div>
 
         <div className="teacher-card-wrapper">
-          {card?.map((val, index)=>{
+          {card.length > 0 ? (
+              card?.map((val, index)=>{
             return(
               <div className="teacher-card" key={index}>
             <div className="teacher-img">
@@ -53,7 +54,13 @@ function ReportCard() {
             </div>
           </div>
             )
-          })}
+          })
+          ): (
+            <div>
+              <h1 style={{color: '#2c3e50'}}>No Report Added Yet ...</h1>
+            </div>
+          )}
+        
         </div>
       </div>
     </>

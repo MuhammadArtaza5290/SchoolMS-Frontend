@@ -47,7 +47,7 @@ function Student() {
             })
           ) : (
             <div>
-              <h1 style={{color: '#2c3e50'}}>No Students Add Yet ...</h1>
+              <h1 style={{color: '#2c3e50'}}>No Student Added Yet ...</h1>
             </div>
           )}
         </div>

@@ -75,7 +75,7 @@ function Teacher() {
             );
           })) : (
             <div>
-              <h1 style={{color: '#2c3e50'}}>No Teachers Add Yet ...</h1>
+              <h1 style={{color: '#2c3e50'}}>No Teacher Added Yet ...</h1>
             </div>
           )}
         </div>
